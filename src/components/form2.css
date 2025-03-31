@@ -1,0 +1,38 @@
+.popup-overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snowpark-ticket {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.snowpark-ticket label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .popup-overlay2 {
+        padding: 265px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .popup-overlay2 {
+        padding: 300px 0px;
+    }
+}

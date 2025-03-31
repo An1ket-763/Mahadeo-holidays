@@ -1,0 +1,49 @@
+#home {
+    background: linear-gradient(rgba(0, 122, 207, .4), rgba(0, 122, 207, .1)),
+        url("/public/images/img-1.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    height: 900px;
+    display: flex;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+    margin: 85px;
+    text-shadow: 1px 1px 4px black;
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        height: 750px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #home h2 {
+        font-size: 48px;
+    }
+
+    #home a {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home {
+        height: 600px;
+    }
+
+    #home h2 {
+        font-size: 36px;
+        margin: 55px;
+    }
+}
