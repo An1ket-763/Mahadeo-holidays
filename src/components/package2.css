@@ -136,7 +136,10 @@
 @media only screen and (max-width: 768px) {
     #package-2 .card-deck {
         flex-direction: column;
+    }
 
+    #package-details2 {
+        width: 100%;
     }
 
     #package-2 .card {

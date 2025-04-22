@@ -55,7 +55,7 @@ export default function Package2() {
                     <div className="package-overlay" onClick={() => setSelectedPackage(null)}></div>
                     <div id="package-details2">
                         <div className="heading">
-                            <span className="close-btn" onClick={() => setSelectedPackage(null)}>×</span>
+                            <span className="close-btn" onClick={() => setSelectedPackage(null)}>X</span>
                             <h2>{selectedPackage.title}</h2>
                         </div>
                         <ImagicaTable title={selectedPackage.title} data={selectedPackage.data} />

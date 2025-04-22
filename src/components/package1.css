@@ -121,17 +121,20 @@
 
 .close-btn {
     cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
     background: #e6302c;
     color: white;
     border: none;
     width: 30px;
     height: 30px;
-    text-align: center;
-    line-height: 25px;
     border-radius: 50%;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .close-btn:hover {
@@ -152,11 +155,28 @@
 @media only screen and (max-width: 768px) {
     #package-1 .card-deck {
         flex-direction: column;
-
     }
 
     #package-1 .card {
         max-width: 100%;
         width: 100%;
+    }
+
+    #package-details {
+        height: 600px;
+        width: 100%;
+    }
+
+    #package-details table {
+        margin: 10px 0px;
+    }
+
+    #package-details .heading h2 {
+        padding: 15px 10px;
+        font-size: 28px;
+    }
+
+    #package-details .book-btn {
+        margin: 0px 5px;
     }
 }
