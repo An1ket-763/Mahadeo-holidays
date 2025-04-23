@@ -3,7 +3,7 @@ import "./package2.css";
 import BookingForm2 from "./form2.jsx";
 import { packages } from "./data.js";
 
-function ImagicaTable({ title, data }) {
+function ImagicaTable({ data }) {
     return (
         <div className="imagica-table">
             <table>
@@ -55,7 +55,7 @@ export default function Package2() {
                     <div className="package-overlay" onClick={() => setSelectedPackage(null)}></div>
                     <div id="package-details2">
                         <div className="heading">
-                            <span className="close-btn" onClick={() => setSelectedPackage(null)}>X</span>
+                            <span className="close-btn" onClick={() => setSelectedPackage(null)}>x</span>
                             <h2>{selectedPackage.title}</h2>
                         </div>
                         <ImagicaTable title={selectedPackage.title} data={selectedPackage.data} />
